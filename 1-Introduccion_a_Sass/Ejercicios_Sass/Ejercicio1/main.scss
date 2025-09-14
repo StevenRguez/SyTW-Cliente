@@ -1,0 +1,9 @@
+@use "colores";
+
+body {
+    background-color: colores.$colorPrimario;
+}
+
+h1,h2 {
+    color: colores.$colorSecundario;
+}
