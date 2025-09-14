@@ -1,0 +1,11 @@
+// Mixin para dirección flex
+@mixin flex-direction($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+// Mixin para tamaño
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}

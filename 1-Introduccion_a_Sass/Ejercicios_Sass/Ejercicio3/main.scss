@@ -1,0 +1,14 @@
+@use "mixins";
+
+.contenedor {
+  @include mixins.flex-direction(column);
+  gap: 1rem;
+  background: #f0f0f0;
+  padding: 1rem;
+}
+
+.caja {
+  @include mixins.size(100px, 100px);
+  background: lightblue;
+  border: 1px solid #333;
+}
