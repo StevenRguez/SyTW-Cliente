@@ -8,4 +8,4 @@ Se ha realizado un esquema general basado en los requerimientos solicitados en e
 
 ##### Ejemplo de ejecución:
 
-![Captura de pantalla](imagen)
+![Captura de pantalla](Mockup.png)
