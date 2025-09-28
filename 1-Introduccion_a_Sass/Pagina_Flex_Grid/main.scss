@@ -1,6 +1,107 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@use "base";
+@use "variables";
+@use "mixins" as *;
+
+// Cabecera de la página
+header {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background-color: variables.$color-header;
+    .logo {
+        margin-left: 5px;
+        .logo img {
+            display: block;              // evita salto por baseline
+            max-height: 48px;          
+            height: auto;
+        }
+    }
+    .empresa {
+        margin-right: 5px;
+    }
 }
 
+// Navegacion
+.navegacion {
+    background-color: variables.$color-nav-garantias;
+    text-align: center;
+    margin: 5px 0;
+}
+
+// Contenido principal
+.main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    padding-inline: 0;
+    background: transparent;
+
+    // Menú lateral
+    .menu {
+        background-color: variables.$color-menu;
+        @include border;
+        text-align: center;
+        align-content: center;
+    }
+
+    // Descripción y productos
+    .contenido {
+        background-color: variables.$color-contenido-testimonios;
+        display: grid;
+        grid-template-rows: 1fr 4fr;
+        gap: 15px;
+
+        .descripcion {
+            background-color: variables.$color-descripcion;
+            text-align: center;
+            margin: 10px 10px 0px 10px;
+            border-radius: 10px;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 0px 10px 10px 10px;
+            background-color: variables.$color-productos;
+            text-align: center;
+            border-radius: 10px;
+
+            .producto {
+                background-color: variables.$color-producto;
+                text-align: center;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+// Testimonios
+.testimonios {
+    background-color: variables.$color-contenido-testimonios;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    text-align: center;
+    margin: 5px 0;
+
+    .testimonio {
+        background-color: variables.$color-testimonio;
+        text-align: center;
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+}
+
+// Pie de página
+footer { // garantías
+    background-color: variables.$color-nav-garantias;
+    text-align: center;
+    margin: 5px 0;
+}

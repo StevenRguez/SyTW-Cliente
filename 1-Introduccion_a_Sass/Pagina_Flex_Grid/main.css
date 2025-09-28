@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 2%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  border-width: 1px;
+  border-color: #b0aeb3;
+  background-color: #eee;
+}
+
+.titulo {
+  grid-column: 1/-1;
+}
+
+header, .navegacion, .main,
+.descripcion, .productos, .producto,
+.testimonio, .testimonios, footer {
+  padding: 1.2rem;
+}
+
+header, .navegacion, .descripcion,
+.productos, .menu, .testimonios, footer {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+header {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  background-color: #c9a4d9;
+}
+header .logo {
+  margin-left: 5px;
+}
+header .logo .logo img {
+  display: block;
+  max-height: 48px;
+  height: auto;
+}
+header .empresa {
+  margin-right: 5px;
+}
+
+.navegacion {
+  background-color: #cbe2f6;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+  padding-inline: 0;
+  background: transparent;
+}
+.main .menu {
+  background-color: #eee;
+  border: solid;
+  border-width: 1px;
+  border-color: #b0aeb3;
+  text-align: center;
+  align-content: center;
+}
+.main .contenido {
+  background-color: #e2d7f2;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  gap: 15px;
+}
+.main .contenido .descripcion {
+  background-color: #d081a8;
+  text-align: center;
+  margin: 10px 10px 0px 10px;
+  border-radius: 10px;
+}
+.main .contenido .productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 0px 10px 10px 10px;
+  background-color: #c1658c;
+  text-align: center;
+  border-radius: 10px;
+}
+.main .contenido .productos .producto {
+  background-color: #f3b6c1;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.testimonios {
+  background-color: #e2d7f2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  text-align: center;
+  margin: 5px 0;
+}
+.testimonios .testimonio {
+  background-color: #d2b5dd;
+  text-align: center;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #cbe2f6;
+  text-align: center;
+  margin: 5px 0;
+}

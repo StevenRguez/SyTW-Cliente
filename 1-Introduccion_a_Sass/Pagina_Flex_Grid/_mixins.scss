@@ -1,0 +1,13 @@
+@use "variables";
+
+// Mixin para encabezados de secciones no principales
+@mixin section-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+@mixin border {
+    border: solid;
+    border-width: 1px;
+    border-color: variables.$color-borde;
+}

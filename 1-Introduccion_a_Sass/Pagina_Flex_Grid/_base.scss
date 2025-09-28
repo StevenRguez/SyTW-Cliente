@@ -1,0 +1,32 @@
+@use "variables";
+@use "mixins" as *;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 2%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    @include border;
+    background-color: variables.$color-menu;
+}
+
+.titulo {
+    grid-column: 1 / -1; // Ocupa toda la fila
+}
+
+header, .navegacion, .main,
+.descripcion, .productos, .producto, 
+.testimonio, .testimonios, footer {
+    padding: variables.$spacing;
+}
+
+header, .navegacion, .descripcion, 
+.productos, .menu, .testimonios, footer {
+    @include section-title;
+}
