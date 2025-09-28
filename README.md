@@ -7,3 +7,4 @@ En este repositorio se almacenarán todas las prácticas de la asignatura durant
 ##### Listado de prácticas:
 
 1. Introducción a Sass
+2. Proyecto Gulp
