@@ -1,0 +1,13 @@
+$fondo-header-footer: linear-gradient(180deg, #85daf4, #357199);
+$fondo-hero: linear-gradient(270deg, #ff9a9e, #fad0c4, #ff9a9e);
+$fondo-sidebar: linear-gradient(180deg, #ffffff, #c3c6c9);
+$fondo-articulo: #c1f6ff; 
+$color-boton-hero: #ff6f61;
+$color-boton-hero-hover: #ff3b2e;
+
+@mixin cabeceras {
+    background: $fondo-header-footer;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}

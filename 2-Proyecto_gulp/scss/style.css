@@ -1,21 +1,17 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto auto 1fr auto;
-}
-
-h1, h2, p {
-  margin: 6px 0;
+footer {
+  background: linear-gradient(180deg, #85daf4, #357199);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
 }
 
 header {
-  background: linear-gradient(180deg, #357199, #85daf4);
+  background: linear-gradient(180deg, #85daf4, #357199);
   color: white;
-  padding: 10px 0;
+  font-weight: bold;
   text-align: center;
+  padding: 10px 0;
 }
 header .nav__list {
   list-style: none;
@@ -33,6 +29,34 @@ header .nav__list a:hover {
   text-decoration: underline;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 20px;
+  padding-inline: 0;
+}
+main .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+main .content .article {
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  padding: 10px;
+  flex: 1 1 calc(100% - 10px);
+  background-color: #c1f6ff;
+  border-radius: 10px;
+}
+
+.sidebar {
+  background: linear-gradient(180deg, #ffffff, #c3c6c9);
+  text-align: center;
+  align-content: center;
+}
+
 .hero {
   background: linear-gradient(270deg, #ff9a9e, #fad0c4, #ff9a9e);
   text-align: center;
@@ -46,42 +70,21 @@ header .nav__list a:hover {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .hero .btn:hover {
   background-color: #ff3b2e;
 }
 
-.layout {
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
   display: grid;
-  grid-template-columns: 2fr 3fr;
-  gap: 20px;
-  padding-inline: 0;
-}
-.layout .sidebar {
-  background: linear-gradient(180deg, #ffffff, #c3c6c9);
-  text-align: center;
-  align-content: center;
-}
-.layout .content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-.layout .content .article {
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-  padding: 10px;
-  flex: 1 1 calc(100% - 10px);
-  background-color: #c1f6ff;
-  border-radius: 10px;
+  grid-template-rows: auto auto 1fr auto;
 }
 
-footer {
-  background: linear-gradient(180deg, #85daf4, #357199);
-  color: white;
-  text-align: center;
-  padding: 10px 0;
+h1, h2, p {
+  margin: 6px 0;
 }

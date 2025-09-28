@@ -1,0 +1,21 @@
+@use 'variables';
+
+// Hero / Banner
+.hero {
+    background: variables.$fondo-hero;
+    text-align: center;
+    padding: 12px 0;
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: variables.$color-boton-hero;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        &:hover {
+            background-color: variables.$color-boton-hero-hover;
+        }
+    }
+}
