@@ -1,0 +1,14 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #f0f0f0;
+  padding: 1rem;
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  border: 1px solid #333;
+}
