@@ -10,13 +10,12 @@ body {
     height: 100vh;
     padding: 2%;
     margin: 0;
-    display: flex;
-    flex-direction: column;
     background-color: variables.$color-menu;
+    @include border;
 }
 
 .titulo {
-    grid-column: 1 / -1; // Ocupa toda la fila
+    grid-column: 1 / -1; // Ocupa toda la fila (empieza en la primera columna y termina en la última)
 }
 
 header, .navegacion, .main,
@@ -27,5 +26,5 @@ header, .navegacion, .main,
 
 header, .navegacion, .descripcion, 
 .productos, .menu, .testimonios, footer {
-    @include section-title;
+    @include titulo_seccion;
 }

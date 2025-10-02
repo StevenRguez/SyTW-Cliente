@@ -1,7 +1,7 @@
 @use "variables";
 
 // Mixin para encabezados de secciones no principales
-@mixin section-title {
+@mixin titulo_seccion {
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
