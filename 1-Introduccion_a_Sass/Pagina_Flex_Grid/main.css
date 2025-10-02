@@ -18,13 +18,14 @@ body {
 }
 
 header, .navegacion, .main,
-.descripcion, .productos, .producto,
+.descripcion, .productos, .main .contenido .productos .producto, .producto,
 .testimonio, .testimonios, footer {
   padding: 1.2rem;
 }
 
 header, .navegacion, .descripcion,
-.productos, .menu, .testimonios, footer {
+.productos,
+.main .contenido .productos .producto, .menu, .testimonios, footer {
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -80,7 +81,7 @@ header .empresa {
   margin: 10px 10px 0px 10px;
   border-radius: 10px;
 }
-.main .contenido .productos {
+.main .contenido .productos, .main .contenido .productos .producto {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
@@ -91,11 +92,9 @@ header .empresa {
 }
 .main .contenido .productos .producto {
   background-color: #f3b6c1;
-  text-align: center;
   align-content: center;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
 }
 
 .testimonios {

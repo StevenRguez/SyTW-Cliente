@@ -6,8 +6,16 @@
     margin-bottom: 0.5rem;
 }
 
+// Mixin para bordes estándar
 @mixin border {
     border: solid;
     border-width: 1px;
     border-color: variables.$color-borde;
+}
+
+// Mixin para centrar contenido
+@mixin centrar_contenido {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

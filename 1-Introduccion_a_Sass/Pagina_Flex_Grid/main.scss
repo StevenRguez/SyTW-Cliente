@@ -68,12 +68,11 @@ header {
             border-radius: 10px;
 
             .producto {
+                @extend .productos;
                 background-color: variables.$color-producto;
-                text-align: center;
                 align-content: center;
                 justify-content: center;
                 align-items: center;
-                border-radius: 10px;
             }
         }
     }
