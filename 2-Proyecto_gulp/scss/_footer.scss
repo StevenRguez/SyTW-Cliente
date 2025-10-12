@@ -1,7 +1,0 @@
-@use 'variables';
-
-// Footer
-footer {
-    @include variables.cabeceras;
-    padding: 10px 0;
-}

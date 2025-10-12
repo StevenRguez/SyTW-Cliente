@@ -1,0 +1,24 @@
+{
+  "name": "pagina_flex_grid",
+  "version": "1.0.0",
+  "description": "Segundo ejercicio de la práctica 2: Herramientas, de la asignatura Sistemas y Tecnologías Web: Cliente",
+  "keywords": [],
+  "author": "Steven Rodríguez Morales",
+  "license": "ISC",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html --public-url ./",
+    "clean": "rm dist/bundle.js",
+    "start": "parcel src/index.html",
+    "build-prod": "parcel build src/index.html"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ],
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.0",
+    "parcel": "^2.16.0",
+    "rimraf": "^5.0.5"
+  }
+}

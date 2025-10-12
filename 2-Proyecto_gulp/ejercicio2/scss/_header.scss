@@ -1,0 +1,32 @@
+@use './variables' as *;
+
+// Cabecera de la página
+header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-header;
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-left: 5px;
+        img {
+            display: block;       // evita espacios por baseline
+            max-height: 75px;     // limita altura si es grande
+            height: auto;
+            width: auto;          // no fuerces width si quieres mantener proporción
+        }
+    }
+    .empresa {
+        margin-right: 5px;
+    }
+}
+
+// Navegacion
+.navegacion {
+    background-color: $color-nav-garantias;
+    text-align: center;
+    margin: 5px 0;
+}

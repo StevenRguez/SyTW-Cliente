@@ -1,0 +1,37 @@
+// Colores
+$color-header: #c9a4d9;
+$color-nav-garantias: #cbe2f6;
+$color-contenido-testimonios: #e2d7f2;
+$color-menu: #eee;
+$color-borde: #b0aeb3;
+$color-descripcion: #d081a8;
+$color-productos: #c1658c;
+$color-producto: #f3b6c1;
+$color-testimonio: #d2b5dd;
+$color-cliente: #b46ea0;
+
+// Tipografía
+$font-main: 'Arial', sans-serif;
+
+// Espaciado
+$spacing: 1.2rem;
+
+// Mixin para encabezados de secciones no principales
+@mixin titulo_seccion {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+// Mixin para bordes estándar
+@mixin border {
+    border: solid;
+    border-width: 1px;
+    border-color: $color-borde;
+}
+
+// Mixin para centrar contenido
+@mixin centrar_contenido {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

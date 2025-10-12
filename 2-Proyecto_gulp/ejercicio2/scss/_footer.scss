@@ -1,0 +1,28 @@
+@use './variables' as *;
+
+// Testimonios
+.testimonios {
+    background-color: $color-contenido-testimonios;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    text-align: center;
+    margin: 5px 0;
+
+    .testimonio {
+        background-color: $color-testimonio;
+        text-align: center;
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+}
+
+// Pie de página
+footer { // garantías
+    background-color: $color-nav-garantias;
+    text-align: center;
+    margin: 5px 0;
+}
