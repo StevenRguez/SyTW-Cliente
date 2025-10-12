@@ -1,0 +1,10 @@
+@use './variables' as *;
+
+ // Menú lateral
+.menu {
+    background-color: $color-menu;
+    @include border;
+    text-align: center;
+    align-content: center;
+    margin: 0px;
+}
