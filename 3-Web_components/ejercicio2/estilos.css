@@ -30,3 +30,15 @@
   font-size: 0.85rem;
   color: #666;
 }
+
+/* 🔹 Estilos para el componente de puntuación */
+#asignar-puntuacion-btn{
+  margin-top: 15px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  color: #0e173c;
+  background-color: #70d8e9;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

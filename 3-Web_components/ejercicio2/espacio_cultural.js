@@ -21,6 +21,10 @@ class GenerarEspacioCultural extends HTMLElement {
 
     // Referencia al contenedor de la lista
     this.$lista = this.shadowRoot.querySelector("#lista");
+
+    // Slot para proyectar <asignar-puntuacion> desde el light DOM
+    const slot = document.createElement("slot");
+    this.shadowRoot.appendChild(slot);
 }
 
 connectedCallback() {
@@ -50,6 +54,10 @@ connectedCallback() {
                 item?.direccion_isla_nombre ?? "Desconocida";
                 node.querySelector(".municipio").textContent = // Municipio
                 item?.direccion_municipio_nombre ?? "Desconocido";
+
+                // Añadir el web component 'asignar-puntuacion' dentro de cada tarjeta
+                const acciones = node.querySelector('.acciones');
+                acciones.appendChild(document.createElement('asignar-puntuacion'));
 
                 this.$lista.appendChild(node); // Añadir el nodo al contenedor de la lista
             }
