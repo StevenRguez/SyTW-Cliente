@@ -6,7 +6,6 @@ class WebComponent extends HTMLElement {
     // Constructor del web component
     constructor() {
         super();
-        console.log('Creado'); // Mensaje en consola al crear el componente
         // Adjuntar un shadow DOM
         this.attachShadow({ mode: 'open' });
         // Clonar el contenido de la plantilla y adjuntarlo al shadow DOM
@@ -16,7 +15,7 @@ class WebComponent extends HTMLElement {
         this.button = this.shadowRoot.querySelector('#anyadir-webComponent');
         // Coger una referencia al botón con id cambiar-webComponent que están en el elemento creado.
         this.changeButton = this.shadowRoot.querySelector('#cambiar-webComponent');
-
+        console.log(`Creado. Estado inicial: ${this.getAttribute('state')}`); // Mensaje en consola al crear el componente
     }
 
     // Se requiere declarar los atributos observados para que el navegador llame a attributeChangedCallback
@@ -45,7 +44,7 @@ class WebComponent extends HTMLElement {
         console.log("Creado");
     }
     attributeChangedCallback(name, oldValue, newValue) {
-        console.log(`Atributo cambiado ${name} -> ${newValue}`);
+        console.log(`Atributo cambiado: ${name} -> ${newValue}`);
     }
 }
 
