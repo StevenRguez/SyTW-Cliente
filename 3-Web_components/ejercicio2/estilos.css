@@ -1,0 +1,32 @@
+/* 🔹 Estilos generales del contenedor y los ítems */
+#lista { 
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.espacio-cultural {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  font-family: system-ui, sans-serif;
+  text-align: center;
+}
+
+.espacio-cultural .nombre {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.espacio-cultural .tipo_instalacion, .espacio-cultural .isla, .espacio-cultural .municipio {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #666;
+}

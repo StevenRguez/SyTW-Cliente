@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 2 - Puntuación de espacios culturales con Web Components</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <!-- Plantilla para la extracción de un espacio cultural -->
+
+    <template id="espacio-cultural-template">
+        <div class="espacio-cultural">
+            <p class="nombre"></p>
+            <p class="tipo_instalacion"></p>
+            <p class="isla"></p>
+            <p class="municipio"></p>
+        </div>
+    </template>
+
+        <!-- Plantilla para asignar una puntuación -->
+
+        <template id="asignar-puntuacion-template">
+            <div class="asignar-puntuacion">
+                <button class="asignar-puntuacion-btn">Asignar Puntuación</button>
+            </div>
+        </template>
+
+        <!-- Contenido de la página -->
+        <h1>Ejercicio 2 - Puntuación de espacios culturales con Web Components</h1>
+        
+        <section id="Subtitulo">
+            <p>En este ejercicio, crearemos un componente web personalizado para permitir a los usuarios puntuar diferentes espacios culturales.</p>
+        </section>
+        <section id = "Area-webComponent">
+            <generar-espacio-cultural>
+                <asignar-puntuacion></asignar-puntuacion>
+            </generar-espacio-cultural>
+        </section>
+
+        <script type="module" src="componentes.js"></script>
+    </body>
+</html>
