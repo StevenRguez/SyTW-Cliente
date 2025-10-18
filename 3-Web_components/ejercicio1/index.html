@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio de Web Components</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <!-- Plantillas -->
+        <template id="botones-webComponent">
+            <style>
+                :host { 
+                    display: block; 
+                    margin-bottom: 12px; 
+                }
+                .anyadir {
+                    background-color: rgb(101, 255, 242);
+                    color: rgb(18, 9, 9);
+                    font-size: 20px;
+                    border: none;
+                    border-radius: 4px;;
+                }
+                .cambiar {
+                    background-color: rgb(153, 74, 255);
+                    color: white;
+                    font-size: 20px;
+                    border: none;
+                    border-radius: 4px;
+                }
+            </style>
+            <button id="anyadir-webComponent" class="anyadir">Añadir</button>
+            <button id="cambiar-webComponent" class="cambiar">Cambiar</button>
+        </template>
+
+        <!-- Contenido de la página -->
+        <h1>Ciclo de vida de un web component</h1>
+        <section id="Area-instrucciones">
+            <h2>Instrucciones</h2>
+            <ol>
+                <li>Abra la <strong>consola del navegador</strong>.</li>
+                <li>Pulse el botón "<i>Añadir webcomponent</i>".</li>
+                <li>Observe los mensajes que aparecen en la consola relacionados con el ciclo de vida del web component.</li>
+                <ul>
+                    <li>Creado</li>
+                    <li>Adjuntado al <strong>DOM</strong></li>
+                    <li>Separado del <strong>DOM</strong></li>
+                    <li>Atributo cambiado</li>
+                </ul>
+            </ol>
+        </section>
+        <section id="Area-webComponent">
+            <h2>Desarrollo webcomponent</h2>
+            <web-component></web-component>
+        </section>
+        <script src="componentes.js"></script>
+    </body>
+</html>
