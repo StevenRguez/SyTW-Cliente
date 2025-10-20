@@ -21,15 +21,23 @@ class GenerarAsignarPuntuacion extends HTMLElement {
     }
 
     connectedCallback() {
-        console.log("Asignar puntuación conectado");
+        console.log("Generar puntuación conectado");
         this.button.addEventListener("click", () => {
             this.dispatchEvent(new CustomEvent("pedir-valoraciones", {
                 bubbles: true, // Permitir que el evento burbujee (que suba por la estructura DOM y que no sea visible sólo por el componente hijo)
                 composed: true, // Permitir que el evento salga del shadow DOM
-                detail: { origen: "asignar-puntuacion" }    // Pasa datos personalizados al receptor
+                detail: { origen: "generar-puntuacion" }    // Pasa datos personalizados al receptor
             }));
-            // De momento, solo mostramos un aviso simple
-            alert("Valoraciones simuladas (a implementar)");
+            // Se genera un número aleatorio del 1 al 5
+            const puntuacion = Math.floor(Math.random() * 5) + 1;
+            // Se reemplaza el contenido del botón por la puntuación generada
+            this.button.textContent = `${puntuacion}`;
+            // Crear estrellas (rellenas y vacías)
+            const estrellas = "★".repeat(puntuacion) + "☆".repeat(5 - puntuacion);
+            // Reemplazar el contenido del botón por las estrellas
+            this.button.textContent = estrellas;
+            // Desactivar el botón para que solo se pueda pulsar una vez
+            this.button.disabled = true;
         });
     }
 }
