@@ -38,6 +38,17 @@ class GenerarAsignarPuntuacion extends HTMLElement {
             this.button.textContent = estrellas;
             // Desactivar el botón para que solo se pueda pulsar una vez
             this.button.disabled = true;
+            // Se genera un número que represente un comentario, extraído de un fichero json
+            const numeroComentario = Math.floor(Math.random() * 9) + 1;
+            fetch("valoraciones.json")
+                .then(response => response.json())
+                .then(data => {
+                    const comentario = '"' + data.valoraciones[numeroComentario] + '"';
+                    // Mostrar el comentario debajo del botón
+                    const comentarioElem = document.createElement("p");
+                    comentarioElem.textContent = comentario;
+                    this.shadowRoot.appendChild(comentarioElem);
+                });
         });
     }
 }

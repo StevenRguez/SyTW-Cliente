@@ -1,8 +1,42 @@
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f9fafc;
+  color: #222;
+  margin: 0;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: clamp(1.4rem, 2.2vw + .8rem, 2rem);
+  font-weight: 700;
+  letter-spacing: .2px;
+  margin: 1.75rem auto 1rem;
+  text-align: center;
+  max-width: 1100px;
+  padding: 0 1rem;
+}
+
+p {
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  font-size: 1rem;
+  color: #4b5563;
+  text-align: center;
+}
+
 /* 🔹 Estilos generales del contenedor y los ítems */
 #lista { 
   display: flex; 
   flex-direction: row;
   justify-content: space-between;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .espacio-cultural {
@@ -22,7 +56,6 @@
   margin-top: 8px;
   font-weight: 500;
   font-size: 0.95rem;
-  color: #333;
 }
 
 .espacio-cultural .tipo_instalacion, .espacio-cultural .isla, .espacio-cultural .municipio {
@@ -33,7 +66,7 @@
 
 /* 🔹 Estilos para el componente de puntuación */
 #asignar-puntuacion-btn{
-  margin-top: 15px;
+  margin: 15px;
   padding: 6px 12px;
   font-size: 0.85rem;
   color: #0e173c;

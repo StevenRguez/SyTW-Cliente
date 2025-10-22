@@ -15,6 +15,8 @@ class WebComponent extends HTMLElement {
         this.button = this.shadowRoot.querySelector('#anyadir-webComponent');
         // Coger una referencia al botón con id cambiar-webComponent que están en el elemento creado.
         this.changeButton = this.shadowRoot.querySelector('#cambiar-webComponent');
+        // Coger una referencia al botón con id eliminar-webComponent que están en el elemento creado.
+        this.removeButton = this.shadowRoot.querySelector('#eliminar-webComponent');
         console.log(`Creado. Estado inicial: ${this.getAttribute('state')}`); // Mensaje en consola al crear el componente
     }
 
@@ -36,9 +38,15 @@ class WebComponent extends HTMLElement {
             const estadoActual = this.getAttribute('state') === 'on' ? 'off' : 'on'; // Alternar entre 'on' y 'off'
             this.setAttribute('state', estadoActual); // Cambiar el atributo 'state' al siguiente estado
         });
+
+        // Eliminar el web component al hacer click en el botón Eliminar
+        this.removeButton.addEventListener('click', () => {
+            this.remove(); // esto dispara disconnectedCallback
+        });
     }
     disconnectedCallback() {
-        console.log("Desconectado");
+        console.log("Separado del DOM");
+  
     }
     adoptedCallback() {
         console.log("Creado");
