@@ -24,14 +24,12 @@ class GenerarAsignarPuntuacion extends HTMLElement {
         console.log("Generar puntuación conectado");
         this.button.addEventListener("click", () => {
             this.dispatchEvent(new CustomEvent("pedir-valoraciones", {
-                bubbles: true, // Permitir que el evento burbujee (que suba por la estructura DOM y que no sea visible sólo por el componente hijo)
+                bubbles: true,  // Permitir que el evento burbujee (que suba por la estructura DOM y que no sea visible sólo por el componente hijo)
                 composed: true, // Permitir que el evento salga del shadow DOM
                 detail: { origen: "generar-puntuacion" }    // Pasa datos personalizados al receptor
             }));
             // Se genera un número aleatorio del 1 al 5
             const puntuacion = Math.floor(Math.random() * 5) + 1;
-            // Se reemplaza el contenido del botón por la puntuación generada
-            this.button.textContent = `${puntuacion}`;
             // Crear estrellas (rellenas y vacías)
             const estrellas = "★".repeat(puntuacion) + "☆".repeat(5 - puntuacion);
             // Reemplazar el contenido del botón por las estrellas
@@ -45,9 +43,9 @@ class GenerarAsignarPuntuacion extends HTMLElement {
                 .then(data => {
                     const comentario = '"' + data.valoraciones[numeroComentario] + '"';
                     // Mostrar el comentario debajo del botón
-                    const comentarioElem = document.createElement("p");
-                    comentarioElem.textContent = comentario;
-                    this.shadowRoot.appendChild(comentarioElem);
+                    const resenya = document.createElement("p");
+                    resenya.textContent = comentario;
+                    this.shadowRoot.appendChild(resenya);
                 });
         });
     }
