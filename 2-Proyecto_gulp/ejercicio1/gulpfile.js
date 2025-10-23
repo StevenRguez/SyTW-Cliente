@@ -2,7 +2,7 @@
 import gulp from 'gulp';
 const { src, dest, watch, series, parallel } = gulp;
 
-import * as dartSass from 'sass';            // corregido el warning
+import * as dartSass from 'sass';           
 import gulpSass from 'gulp-sass';
 const sassCompiler = gulpSass(dartSass);
 
@@ -15,7 +15,6 @@ import gulpIf from 'gulp-if';
 import pngquant from 'imagemin-pngquant';
 import imagemin from 'gulp-imagemin';
 import imageminMozjpeg from 'imagemin-mozjpeg';
-import imageminOptipng from 'imagemin-optipng';
 import imageminSvgo from 'imagemin-svgo';
 import browserSync from 'browser-sync';
 const bs = browserSync.create();
