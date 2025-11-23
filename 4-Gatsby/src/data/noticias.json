@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "titulo": "Evento especial por su vigésimo aniversario"
+    },
+    {
+        "id": 2,
+        "titulo": "Nuevas instalaciones inauguradas recientemente"
+    },
+    {
+        "id": 3,
+        "titulo": "Colaboración con artistas locales para exposiciones temporales"
+    },
+    {
+        "id": 4,
+        "titulo": "Talleres y actividades programadas para el próximo trimestre"
+    },
+    {
+        "id": 5,
+        "titulo": "Renovación de espacios para mejorar la experiencia de los visitantes"
+    },
+    {
+        "id": 6,
+        "titulo": "Ofertas especiales y descuentos para miembros"
+    },
+    {
+        "id": 7,
+        "titulo": "Campañas de concienciación sobre la importancia del arte y la cultura"
+    },
+    {
+        "id": 8,
+        "titulo": "Celebración de feria de arte con participación internacional"
+    },
+    {
+        "id": 9,
+        "titulo": "Lanzamiento de una nueva plataforma digital para visitas virtuales"
+    },
+    {
+        "id": 10,
+        "titulo": "Nuevos proyectos comunitarios para fomentar la participación ciudadana"
+    }
+]
