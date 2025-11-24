@@ -1,15 +1,15 @@
 # Práctica 4: Gatsby
 
-## Fecha de entrega:
+### Fecha de entrega:
 Lunes 24 de noviembre de 2025
 
-## Trabajo realizado
+### Trabajo realizado
 
 Esta práctica consiste en desarrollar un prototipo de sitio estático utilizando **Gatsby**, siguiendo los principios de la arquitectura *JAMSTACK* y empleando *React* y *GraphQL* para gestionar componentes y datos.
 
 El objetivo principal es mostrar información sobre espacios culturales de Canarias, generando tarjetas dinámicas basadas en datos cargados desde ficheros JSON que actúan como una API simulada.
 
-## Resumen del desarrollo
+### Resumen del desarrollo
 
 1. Configuración del proyecto
 Se creó un proyecto Gatsby desde cero, configurando los plugins necesarios para:
@@ -37,7 +37,7 @@ En la página de inicio se muestran tres tarjetas aleatorias, combinando de form
 Con gatsby-node.js se genera una página por cada espacio cultural, incorporando título dinámico, imagen, valoración y noticias.
 
 6. Imágenes y estilos
-Se integraron imágenes mediante <StaticImage /> y se reutilizó/ajustó la hoja de estilos de la práctica anterior para mejorar la presentación y unificar el diseño.
+Se integraron imágenes mediante '<StaticImage />' y se reutilizó/ajustó la hoja de estilos de la práctica anterior para mejorar la presentación y unificar el diseño.
 
 Todo esto puede observarse en la ejecución del programa, tal y como muestra la imagen siguiente:
 
