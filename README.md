@@ -8,4 +8,5 @@ En este repositorio se almacenarán todas las prácticas de la asignatura durant
 
 1. **Introducción a Sass**: Ejercicios básicos de introducción al lenguaje Sass, y al uso de los organizadores Flex y Grid.
 2. **Proyecto Gulp**: Práctica basada en el uso de varias herramientas de automatización y *bundling*, con el objetivo de conocer su funcionamiento y las ventajas que proporcionan.
-3. **Web components**: Basándose en la replicación de un sistema de puntuación de eventos culturales, se busca crear aplicaciones web sencillas donde se demuestre la eficacia en el uso de web components. 
+3. **Web components**: Basándose en la replicación de un sistema de puntuación de eventos culturales, se busca crear aplicaciones web sencillas donde se demuestre la eficacia en el uso de web components.
+4. **Gatsby**: Haciendo uso de esta herramienta basada en *React*, y en la arquitectura **JamStack**, se propone replicar una interfaz sencilla con navegación entre páginas y que introduzca consultas en *GraphQL*  
