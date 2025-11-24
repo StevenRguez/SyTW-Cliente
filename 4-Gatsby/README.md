@@ -37,7 +37,7 @@ En la página de inicio se muestran tres tarjetas aleatorias, combinando de form
 Con gatsby-node.js se genera una página por cada espacio cultural, incorporando título dinámico, imagen, valoración y noticias.
 
 6. Imágenes y estilos
-Se integraron imágenes mediante ´<StaticImage />´ y se reutilizó/ajustó la hoja de estilos de la práctica anterior para mejorar la presentación y unificar el diseño.
+Se integraron imágenes mediante ´StaticImage´ y se reutilizó/ajustó la hoja de estilos de la práctica anterior para mejorar la presentación y unificar el diseño.
 
 Todo esto puede observarse en la ejecución del programa, tal y como muestra la imagen siguiente:
 
