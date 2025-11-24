@@ -21,6 +21,20 @@ const obtenerTipo = (props) => {
   return "otro";
 };
 
+/*
+  const obtenerTipo = (props) => {
+    if (props.museo === "sí") return "../images/museo.jpeg";
+    if (props.biblioteca === "sí") return "../images/biblioteca.jpeg";
+    if (props.teatro === "sí") return "../images/teatro.jpeg";
+    return "../images/tenerife.jpg";
+  };
+
+  const rutaImagen = obtenerTipo(props);
+
+  <StaticImage src={rutaImagen} alt="Espacio cultural" />
+
+*/
+
 const EspacioCultural = (props) => {
   const tipo = obtenerTipo(props);
 

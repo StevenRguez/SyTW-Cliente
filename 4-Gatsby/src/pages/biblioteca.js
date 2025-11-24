@@ -4,15 +4,11 @@ import Layout from "../components/layout";
 import EspacioCultural from "../components/espacio_cultural";
 import Valoracion from "../components/valoracion";
 import Noticias from "../components/noticias";
-import AsignarPuntuacion from "../components/asignar_puntuacion";
 
 const BibliotecaPage = ({ data }) => {
   const espacio = data.espacios.nodes[0];
   const valoraciones = data.valoraciones.nodes;
   const noticias = data.noticias.nodes;
-
-  const valoracionRandom =
-    valoraciones[Math.floor(Math.random() * valoraciones.length)];
 
   const noticiaRandom =
     noticias[Math.floor(Math.random() * noticias.length)];
@@ -31,8 +27,7 @@ const BibliotecaPage = ({ data }) => {
             biblioteca={espacio.biblioteca}
           />
 
-          <Valoracion comentario={valoracionRandom.comentario} />
-          <AsignarPuntuacion valoraciones={valoraciones} />
+          <Valoracion valoraciones={valoraciones} />
 
           <Noticias noticias={[noticiaRandom]} style={{ flex: 2 }} />
         </div>

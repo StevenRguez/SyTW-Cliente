@@ -64,8 +64,7 @@ const IndexPage = () => {
                 teatro={espacio.teatro}
               />
 
-              <Valoracion />
-              <AsignarPuntuacion valoraciones={valoraciones} />
+              <Valoracion valoraciones={valoraciones} />
             </div>
           );
         })}

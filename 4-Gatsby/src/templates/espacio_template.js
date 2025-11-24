@@ -4,7 +4,6 @@ import Layout from "../components/layout";
 import EspacioCultural from "../components/espacio_cultural";
 import Valoracion from "../components/valoracion";
 import Noticias from "../components/noticias";
-import AsignarPuntuacion from "../components/asignar_puntuacion";
 
 const EspacioTemplate = ({ data }) => {
   const espacio = data.espacio;
@@ -12,9 +11,6 @@ const EspacioTemplate = ({ data }) => {
   const noticias = data.noticias.nodes;
 
   // Elegir al azar
-  const valoracionRandom =
-    valoraciones[Math.floor(Math.random() * valoraciones.length)];
-
   const noticiaRandom =
     noticias[Math.floor(Math.random() * noticias.length)];
 
@@ -32,8 +28,7 @@ const EspacioTemplate = ({ data }) => {
         teatro={espacio.teatro}
       />
 
-      <Valoracion />
-      <AsignarPuntuacion valoraciones={valoraciones} />
+      <Valoracion valoraciones={valoraciones} />
 
       <Noticias noticias={[noticiaRandom]} />
     </Layout>
