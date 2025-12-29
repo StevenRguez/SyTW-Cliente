@@ -14,6 +14,7 @@ El reproductor implementado es de audio, aunque la lógica desarrollada sería i
 1. Estructura base del reproductor
    
 Se partió del reproductor básico proporcionado en clase, compuesto por:
+
 	•	Un elemento <audio> con carga de metadatos.
 	•	Controles esenciales de reproducción (play/pause y stop).
 	•	Control de volumen mediante un slider.
@@ -24,6 +25,7 @@ Esta base sirvió como punto de partida para la incorporación progresiva de las
 2. Barra de progreso interactiva
    
 Se implementó una barra de progreso personalizada que muestra visualmente el avance de la reproducción.
+
 	•	La barra se actualiza dinámicamente usando el evento timeupdate del elemento <audio>.
 	•	El usuario puede hacer clic sobre la barra para desplazarse a cualquier punto del audio, calculando la posición seleccionada y actualizando el valor de currentTime.
 	•	La barra se ha estilizado mediante CSS para integrarse visualmente con el resto del reproductor.
@@ -35,6 +37,7 @@ Se añadieron controles para modificar la velocidad de reproducción. La velocid
 4. Saltos adelante y atrás
    
 El reproductor incorpora botones para realizar saltos temporales en la reproducción:
+
 	•	Salto de 10 segundos hacia adelante.
 	•	Salto de 10 segundos hacia atrás.
 
@@ -43,6 +46,7 @@ Estos controles modifican directamente la propiedad currentTime, teniendo en cue
 5. Botón de silencio
    
 Se implementó un botón de silencio (mute) que:
+
 	•	Silencia el audio al pulsarlo.
 	•	Restaura el volumen previo cuando se vuelve a pulsar.
 
@@ -51,6 +55,7 @@ Para ello, se almacena el valor anterior del volumen antes de activar el modo si
 6. Guardado y restauración de la posición
    
 Se añadió persistencia de estado mediante localStorage:
+
 	•	La posición actual de reproducción se guarda periódicamente.
 	•	Al recargar la página, el reproductor restaura automáticamente el punto exacto en el que se encontraba el audio.
 
