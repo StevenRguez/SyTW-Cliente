@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Práctica Three.js - Base</title>
+    <link rel="stylesheet" href="./three.css" />
+  </head>
+  <body>
+    <!-- Un “marco” para el canvas (el render de Three) -->
+    <div id="app">
+      <canvas id="scene"></canvas>
+
+      <!-- UI -->
+      <div id="ui">
+        <h1>Visualizador 3D (GLTF)</h1>
+
+        <input
+            id="modelUrl"
+            type="text"
+            placeholder="Pega aquí la URL de un .gltf o .glb"
+        />
+
+        <button id="loadBtn">Cargar modelo</button>
+        <p class="hint">
+            Ratón: rotar · Rueda: zoom · Shift + arrastrar: mover
+        </p>
+      </div>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+            }
+        }
+    </script>
+
+    <script type="module" src="./three.js"></script>
+  </body>
+</html>

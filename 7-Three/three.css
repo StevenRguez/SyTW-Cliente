@@ -1,0 +1,68 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+#app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#scene {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#ui {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  width: 100%;
+  backdrop-filter: blur(6px);
+  max-width: 360px;
+}
+
+#ui h1 {
+  font-size: 16px;
+  margin: 0 0 6px 0;
+}
+
+#ui p {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+#ui input, button {
+  width: 100%;
+  margin: 8px 0;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: none;
+  font-size: 13px;
+}
+
+#ui button {
+  cursor: pointer;
+  background: #4aa3ff;
+  color: black;
+  font-weight: 600;
+}
+
+#ui button:hover {
+  background: #6cb6ff;
+}
+
+#ui .hint {
+  margin-top: 8px;
+  font-size: 12px;
+  opacity: 0.8;
+}
