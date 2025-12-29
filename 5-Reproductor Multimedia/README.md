@@ -1,7 +1,7 @@
 # Práctica 5: Reproductor Multimedia
 
 ### Fecha de entrega:
-Lunes 29 de diciembre de 2025
+Martes 23 de diciembre de 2025
 
 ### Trabajo realizado
 
