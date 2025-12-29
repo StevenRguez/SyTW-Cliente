@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyTWeb: Audio Player</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.2/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Reproductor.css">
+</head>
+<body>
+    <div class="flex items-center justify-center h-screen">
+        <div class="flex flex-col items-center border-2 border-sky-500">
+
+            <!-- Ejemplo de Audio Player -->
+
+            <audio id="myAudioPlayer" preload="metadata">
+                <source src="assets/demo-song.mp3" type="audio/mpeg">
+            </audio>
+
+            <!-- Modificación 1: Barra de progreso -->
+            <div id="progressContainer">
+                <div id="progressBar"></div>
+            </div>
+
+            <!-- Interfaz del reproductor -->
+            <div class="player">
+                <button id="playPause">▶ Play</button>
+
+                <!-- Modificación 3: Botones de avance y retroceso -->
+                <button id="backward">↩10s</button>
+                <button id="forward">10s↪</button> 
+
+                <!-- Modificación 2: Velocidad de reproducción -->
+                <button id="speedBtn">1x</button>
+
+                <button id="stop">⏹ Stop</button>
+            
+                <label>
+                    Volumen:
+                    <input type="range" id="volume" 
+                        min="0" max="100" value="100">
+                </label>
+
+                <!-- Modificación 4: Botón de silencio -->
+                <button id="muteBtn">🔊</button>
+
+                <div>
+                    <span id="currentTime">0:00</span> /
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="Reproductor.js"></script>
+</body>
+</html>
